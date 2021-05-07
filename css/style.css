@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: #fff;
+}
+a:visited{
+    color: #fff;
+}
+a:hover{
+    color: #00D98D;
+}
+.menu .menu-yellow:hover{
+    color: #D9C700;
+}
+.twitter-id :hover{
+    color: #D9C700;
+}
+
+/* フォント設定、文字サイズ設定 */
+body{
+    /* font-family: "Noto Sans JP"; */
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+    background-color: #2B2B2B;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+}
+h3{
+    font-size: 24px;
+    color: #0095D9;
+    text-align: center;
+}
+.intro-p{
+    font-size: 18px;
+}
+ul p{
+    font-size: 15px;
+}
+.sns-id{
+    font-size: 24px;
+}
+.footer-name{
+    font-size: 24px;
+}
+/*////////////////////////////// */
+
+
+/* 画像サイズ設定 */
+.head-icon img{
+    width: 50px;
+}
+.intro-img img{
+    width: 350px;
+}
+.mem-icon img{
+    width: 142px;
+}
+.sns-icon img{
+    width: 114px;
+}
+/* ////////////////////// */
+
+.menu{
+    width: 100%;
+    height: 75px;
+    background-color: #0095D9;
+    color: #fff;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    padding-left: 100px;
+    padding-right: 100px;
+    z-index: 50;
+}
+.menu span{
+    margin: 15px;
+}
+
+/* キービジュアル */
+header{
+    width: 100%;
+    min-height: 475px;
+    background: url(../img/kv.jpg) center/cover;
+    position: relative;
+    /* KVの文字中央寄せ→親要素にrelative、子要素にabsolute、全要素0、marginをauto */
+}
+.title{
+    color: #000;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.head-container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 100px;
+    bottom: 20px;
+}
+.twitter{
+    margin-right: 30px;
+}
+/* ////////////////////////////// */
+
+
+.sec-title{
+    text-align: center;
+    color: #fff;
+    background-color: #0095D9;
+    padding: 14px;
+}
+
+
+.intro-container{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.intro-sent{
+    width: 350px;
+    color: #fff;
+    margin: 20px;
+}
+.intro-img{
+    margin: 20px;
+}
+
+
+.mem-container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.contents{
+    width: 240px;
+    height: 320px;
+    color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+}
+.green{
+    background-color: #00D98D;
+}
+.yellow{
+    background-color: #D9C700;
+}
+.contents p{
+    width: fit-content;
+}
+.mem-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.contents .section{
+    margin-top: 10px;
+}
+
+.Video{
+    background: url(../img/kv.jpg) center/cover;
+}
+.video{
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 60px;
+}
+
+
+.sns-container{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sns-content{
+    width: 200px;
+    text-align: center;
+    margin: 100px;
+}
+.sns-icon{
+    height: 114px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.sns-id{
+    color: #fff;
+}
+
+footer{
+    height: 100px;
+    background-color: #0095D9;
+    position: relative;
+}
+footer small{
+    color: #fff;
+    position: absolute;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
