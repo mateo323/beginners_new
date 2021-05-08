@@ -6,8 +6,6 @@
 ul{
     list-style: none;
 }
-
-@media screen and (min-width:1024px) {
     
 a{
     text-decoration: none;
@@ -284,7 +282,7 @@ footer small{
     display: inline-block;
     animation:bound-yellow 1.0s 0.8s;
 }
-}
+
 
 @keyframes bound-yellow {
     0%,100% {transform: scale(1);transform: translateY(0px);}

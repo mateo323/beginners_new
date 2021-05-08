@@ -8,17 +8,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet"> -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" media="screen and (min-width:1024px)">
+    <link rel="stylesheet" href="./css/tb-style.css" media="screen and (min-width:480px) and (max-width:1024px)">
+    <link rel="stylesheet" href="./css/sp-style.css" media="screen and (max-width:480px)">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
         <div class="menu">
-            <span><a href="#intro">ビギナーズとは</a></span>
-            <span><a href="#member" class="menu-yellow">メンバー</a></span>
-            <span><a href="#video">ライブ映像</a></span>
-            <span><a href="#sns" class="menu-yellow">SNS</a></span>
+            <span class="int"><a href="#intro">ビギナーズとは</a></span>
+            <span class="mem"><a href="#member" class="menu-yellow">メンバー</a></span>
+            <span class="vid"><a href="#video">ライブ映像</a></span>
+            <span class="SNS"><a href="#sns" class="menu-yellow">SNS</a></span>
         </div>
-        <h1 class="title" id="kv">We are Beginners !!</h1>
+        <h1 class="title" id="kv"><span>We</span> <span>are</span> <span>Beginners !!</span></h1>
         <div class="head-container">
             <div class="head-icon twitter"><a href="https://twitter.com/beginners_nits"><img src="./img/twitter.png" alt=""></a></div>
             <div class="head-icon"><a href="https://www.instagram.com/nits_kon/"><img src="./img/insta.png" alt=""></a></div>
@@ -56,11 +60,13 @@
                 </div>
                 <div class="contents yellow">
                     <div class="mem-icon"><img src="./img/kubota.png" alt=""></div>
+                    <div class="cap">
                     <ul>
                         <li class="name"><p>名前：クボタ</p></li>
                         <li class="inst"><p>担当：Ba.</p></li>
                         <li class="section"><p>しっかり者かと思いきや天然。絶対に酒を飲ませてはいけない</p></li>
                     </ul>
+                    </div>
                 </div>
                 <div class="contents green">
                     <div class="mem-icon"><img src="./img/yoshida.png" alt=""></div>
@@ -120,7 +126,8 @@
     </div>
 
     <footer>
-        <small class="footer-name"><a href="#kv">🄫beginners2021</a></small>
+        <small class="footer-name"><a href="#kv">©beginners2021</a></small>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
