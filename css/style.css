@@ -6,8 +6,6 @@
 ul{
     list-style: none;
 }
-
-@media screen and (min-width:1024px) {
     
 a{
     text-decoration: none;
@@ -24,24 +22,26 @@ a:hover{
     /* font-size: 105%; */
     transform: scale(1.05);
     font-size: 105%;
-    color: #00D98D;
+    /* color: #00D98D; */
 }
-.menu .menu-yellow:hover{
-    color: #D9C700;
+
+.id-ins :hover{
+    color: #00C882;
 }
 .twitter-id :hover{
     color: #D9C700;
 }
 
+
 /* フォント設定、文字サイズ設定 */
 body{
     /* font-family: "Noto Sans JP"; */
     font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
-    background-color: #2B2B2B;
+    background-color: #222222;
 }
 h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 50px;
+    font-size: 60px;
 }
 h2{
     font-family: 'Oswald', sans-serif;
@@ -49,8 +49,9 @@ h2{
 }
 h3{
     font-size: 24px;
-    color: #0095D9;
+    color: #00C882;
     text-align: center;
+    margin-bottom: 36px;
 }
 .intro-p{
     font-size: 18px;
@@ -82,10 +83,12 @@ ul p{
 }
 /* ////////////////////// */
 
+
+
 .menu{
     width: 100%;
     height: 75px;
-    background-color: #0095D9;
+    background-color: #00C882;
     color: #fff;
     position: fixed;
     display: flex;
@@ -112,16 +115,45 @@ ul p{
     width: 34px;
 }
 
+.menu span{
+    position: relative;
+}
+.underline::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+}
+span:hover .underline::after{
+    width: 50%;
+    transition: .5s;
+}
+
 /* キービジュアル */
 header{
     width: 100%;
-    min-height: 475px;
+    min-height: 650px;
     background: url(../img/kv.jpg) center/cover;
     position: relative;
+    /* z-index: 1; */
     /* KVの文字中央寄せ→親要素にrelative、子要素にabsolute、全要素0、marginをauto */
 }
+header::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-height: 650px;
+    opacity: 0.6;
+    background-color: #353434;
+    z-index: 2;
+}
 .title{
-    color: #000;
     width: fit-content;
     height: fit-content;
     position: absolute;
@@ -130,6 +162,7 @@ header{
     right: 0;
     bottom: 0;
     margin: auto;
+    z-index: 3;
 }
 .head-container{
     display: flex;
@@ -137,6 +170,7 @@ header{
     position: absolute;
     right: 100px;
     bottom: 20px;
+    z-index: 4;
 }
 .twitter{
     margin-right: 30px;
@@ -147,8 +181,8 @@ header{
 .sec-title{
     text-align: center;
     color: #fff;
-    background-color: #0095D9;
-    padding: 14px;
+    /* background-color: #0095D9; */
+    padding: 25px;
 }
 
 
@@ -180,8 +214,8 @@ header{
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .contents{
@@ -193,7 +227,7 @@ header{
     padding: 15px;
 }
 .green{
-    background-color: #00D98D;
+    background-color: #00C882;
 }
 .yellow{
     background-color: #D9C700;
@@ -212,13 +246,48 @@ header{
 }
 
 .Video{
-    background: url(../img/kv.jpg) center/cover;
+    width: 100%;
+    background: url(../img/intro_img.jpg) center/cover;
+    position: relative;
+    z-index: 5;
 }
+
+.Video::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #2B2B2B;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: 6;
+}
+
+h2{
+    position: sticky;
+    top: 70px;
+    /* z-index: 51; */
+}
+.Video h2{
+    z-index: 51;
+    /* position: sticky;
+    top: 75px; */ 
+}
+
 .video{
-    width: fit-content;
+    width: 70%;
     margin-right: auto;
     margin-left: auto;
-    padding: 60px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    position: relative;
+}
+.mov{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    z-index: 8;
 }
 
 
@@ -229,6 +298,8 @@ header{
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .sns-content{
     width: 200px;
@@ -248,7 +319,7 @@ header{
 
 footer{
     height: 100px;
-    background-color: #0095D9;
+    /* background-color: #0095D9; */
     position: relative;
 }
 footer small{
@@ -265,7 +336,7 @@ footer small{
 }
 
 .title{
-    color: #2B2B2B;
+    color: #fff;
     /* display: none; */
     /* animation: bound 0.8s; */
 }
@@ -284,7 +355,9 @@ footer small{
     display: inline-block;
     animation:bound-yellow 1.0s 0.8s;
 }
-}
+
+
+
 
 @keyframes bound-yellow {
     0%,100% {transform: scale(1);transform: translateY(0px);}
